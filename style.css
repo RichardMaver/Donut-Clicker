@@ -1,0 +1,136 @@
+:root {
+    --purple: #9B5DE5;
+    --pink: #F15BB5;
+    --yellow: #FEE440;
+    --blue: #00BBF9;
+    --teal: #00F5D4;
+    --box-shadow: inset 0 6px 1px 0 rgba(0,0,0,0.35),
+    0 5px 5px rgba(0,0,0,0.5),
+    0 5px 15px rgba(0,0,0,0.35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/sweet-donut-glaze-background.jpeg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--blue);
+    text-shadow: var(--purple) 1px 0 10px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    background-color: var(--pink);
+    border: solid var(--blue) 5px;
+    box-shadow: var(--box-shadow);
+    user-select: none;
+}
+
+.accordion {
+    background-color:var(--pink);
+    color: var(--yellow);
+    cursor: pointer;
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: var(--blue) solid 1px; 
+    outline: none;
+    transition: 0.4s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    user-select: none;
+}
+
+.active, .accordion:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: var(--teal);
+    color: var(--pink);
+    display: none;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+}
+
+.panel a {display: grid;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--purple);
+}
+
+.panel a:hover {
+color: var(--yellow);
+font-size: 20px;
+}
+
+#button-1 {
+    margin: 1em auto;
+    padding: 1em auto;
+    display: block;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#button-1:active {
+    transform: translateY( 6px);
+}
+
+#donut-count, #auto-clickers {
+    margin: 1em auto;
+    padding: 1em;
+    display: block;
+    justify-content: center;
+    width:max-content ;
+    color: var(--purple);
+    background: var(--blue);
+    box-shadow: var(--box-shadow);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+    border-radius: 4px;
+}
+
+#button-2, #new {
+    margin: 1em auto;
+    padding: 1em;
+    display: block;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    background: var(--teal);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#button-2:hover, #new:hover {
+    background-color: var(--yellow);
+}
+
+#button-2:active, #new:active {
+    background-color: var(--yellow);
+    box-shadow: 0 5px #000;
+    transform: translateX(4px);
+}
+
+#button-2:disabled {
+    opacity: .9;
+    background: var(--purple);
+    pointer-events: none;
+}

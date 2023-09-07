@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Donut Clicker</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Donut Clicker</h1>
+        <nav id="directory">
+
+          <button id="fred" class="accordion">Fred the Baker Baking Company</button>
+            <div class="panel">
+              <p>Fred the Baker loves two things in this world, making donuts and playing cookie clicker. That's why Fred tasked WCCI to put their top students to the test to combine his two loves. Cookie clicker is a game where you click on a cookie to get cookies. Collect enough cookies and you can purchase auto-clickers to click for you! In Fred's mind, what's better than clicking a cookie? You guessed it! Clicking a donut! So go ahead and click on that delicious, strawberry frosted, sprinkle donut! The more donuts you have, the bigger the discount you can when you purchase your own strawberry sprinkle donut from Fred, himself! Happy clicking!</p>
+            </div>
+
+          <button id="cookie-clicker" class="accordion">Cookie Clicker</button>
+            <div class="panel">
+              <p>Inspiration for this game!</p>
+              <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+            </div>
+
+          <button id="contact" class="accordion">Contact Me</button>
+            <div class="panel">
+              <p>Richard Maver:</p>
+              <a href="https://github.com/RichardMaver" target="_blank">My github</a>
+              <a href="https://github.com/WeCanCodeIT/homework----personal-portfolio-RichardMaver" target="_blank">My Portfolio</a>
+              <p>rmaver94@gmail.com</p>
+            </div>
+        </nav>
+</header>
+<main>
+    <div id="click" class="container">
+      <button id="button-1" class="button"><img src="images/donuts-homer-simpson-sprinkles-clip-art-donuts-8c33a00102d65c8090a4e9cd71c7635b.png" alt="Picture of a donut" width="375px"></button>
+      <section id="donut-count">Donuts: 0</section>
+    </div>
+
+    <div>
+      <button id="button-2" class="button" disabled></button>
+        <section id="auto-clickers">Auto Clickers: 0</section>
+    </div>
+
+    <div>
+      <button id="new">New Game</button>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+  <script src="DonutMaker.js"></script>
+  </body>
+  
+</html>
